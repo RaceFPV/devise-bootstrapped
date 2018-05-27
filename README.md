@@ -6,18 +6,14 @@ You can find usage information below, but the gist of it is you'll run `rails g 
 
 If you want to switch back to what Devise gives you no problem! Just remove the devise views folder and run the normal Devise generator command.
 
+This version is set to use Bootstrap v4 by default, if you would like to use Bootstrap v3 please see the version by king601.
+
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
 gem 'devise-bootstrapped'
-```
-
-A Bootstrap v4 version is available if you use the bootstrap4 branch from github
-
-```ruby
-gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
 ```
 
 And then execute:
@@ -32,15 +28,6 @@ To use the Bootstrap views generator you'll want to have Devise and Bootstrap in
 `rails generate devise:views:bootstrapped`
 
 If you've already generated the Devise views you can use the -f argument to force an override but that will erase any of the changes you've made!
-
-## Upgrading to Bootstrap v4
-
-To upgrade to v4 you can force override the views, or you can modify each view's offsets to use the new syntax.
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/king601/devise-bootstrapped. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
 
 ## License
 
